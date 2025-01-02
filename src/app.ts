@@ -65,3 +65,5 @@ app.listen(PORT, () => {
 });
 
 export default app;
+
+//    // "start": "node build/app.ts",
