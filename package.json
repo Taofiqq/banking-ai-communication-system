@@ -1,12 +1,13 @@
 {
   "name": "banking-communication-system-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec ts-node src/app.ts",
     "start": "node build/app.js",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm install @types/node"
   },
   "keywords": [],
   "author": "",
@@ -34,5 +35,8 @@
     "@types/express": "^5.0.0",
     "@types/express-pino-logger": "^4.0.5",
     "@types/jsonwebtoken": "^9.0.7"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
